@@ -1,0 +1,374 @@
+h1 {
+    font-family: 'Cormorant Infant', serif;
+    font-size: 80px;
+    font-weight: 300;
+}
+h2 {
+    font-family: 'Cormorant Infant', serif;
+    font-size: 55px;
+    font-weight: 300;
+}
+h3 {
+    font-family: 'Cormorant Infant', serif;
+    font-size: 38px;
+    font-weight: 300;
+}
+
+/*шрифты
+font-family: 'Alumni Sans Collegiate One', sans-serif;
+font-family: 'Cormorant Infant', serif;
+font-family: 'Mulish', sans-serif;
+font-family: 'Old Standard TT', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Pixelify Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+header {
+    background-color: #fcfcfc;
+}
+.container {
+    margin: auto;
+    width: 1440px;
+}
+
+nav {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img {
+    width: 115px;
+    height: 50px;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3em;
+}
+.menu a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    color:#6B7276;
+}
+.menu a:hover {
+    color: #36B9EB;
+}
+
+.menu button {
+    border: none;
+    background-color: #fcfcfc;
+    color: #6B7276;
+    font-size: 18px;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 400;
+    display: flex;
+    flex-direction: column;
+}
+
+nav button{
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 18px;
+    color: #6B7276;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #fcfcfc;
+    border-left: 1px solid #6B7276;
+    padding-left: 1em;
+}
+
+
+nav button:hover {
+    color: #36B9EB;
+}
+nav button:hover i {
+        margin-left: 1em;
+        border: solid #36B9EB;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: 3px;
+}
+
+
+.menu__item {
+    display: flex;
+    align-items: center;
+}
+
+.menu button ul {
+    transition: all 0.5s;
+    padding: 1em;
+    text-align: left;
+    position: absolute;
+    margin-top: 2em;
+    border: 1px solid #B0BFD0;
+    border-radius: 20px;
+    background-color: #fcfcfc;
+}
+.menu button ul a li {
+    margin-top: 10px;
+}
+
+nav button ul {
+    background-color: #fcfcfc;
+    display: none;
+    transition: all 0.5s;
+    padding: 1em;
+    text-align: left;
+    position: absolute;
+    margin-top: 2em;
+    border-radius: 20px;
+    margin-left: -2em;
+}
+nav button ul a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: #6B7276;
+    text-align: left;
+}
+nav button ul a li {
+    margin-top: 10px;
+}
+nav button ul a:hover {
+    color: #36B9EB;
+}
+
+.menu__price ul {
+    margin-left: -3em;
+} 
+.menu__about ul {
+    margin-left: 3em;
+}
+
+/*стрелки*/
+i {
+    margin-left: 1em;
+    border: solid #6B7276;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transition: all 0.3s;
+}
+.big_arrow {
+    padding: 7px
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+
+/* бургер меню */
+.burger__menu {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+}
+.burger__btn_close {
+    cursor: pointer;
+    display: none;
+    width: 2px;
+    height: 28px;
+    background-color: #6B7276;
+    rotate: 45deg;
+}
+.burger__btn_close:before {
+    cursor: pointer;
+    content: '';
+    width: 2px;
+    height: 28px;
+    background-color: #6B7276;
+    rotate: -90deg;
+}
+.burger__menu:hover .burger__btn_close {
+    background-color: #40BCEC;
+}
+.burger__menu:hover .burger__btn_close:before {
+    background-color: #40BCEC;
+}
+.burger__btn_open:hover .btn__open_one {
+    background-color: #40BCEC;
+}
+.burger__btn_open:hover .btn__open_two {
+    background-color: #40BCEC;
+}
+.burger__btn_open:hover .btn__open_tree {
+    background-color: #40BCEC;
+    width: 12px;
+}
+
+.burger__btn_open {
+    align-items: flex-end;
+    display: flex;
+    width: 28px;
+    height: 28px;
+    gap: 10px;
+    flex-direction: column;
+}
+.btn__open_one {
+    width: 28px;
+    height: 2px;
+    background-color: #6B7276;
+}
+.btn__open_two {
+    width: 28px;
+    height: 2px;
+    background-color: #6B7276;
+}
+.btn__open_tree {
+    transition: all 0.5s;
+    width: 28px;
+    height: 2px;
+    background-color: #6B7276;
+}
+
+/*слайлер бургер меню*/
+.burger__menu_list {
+    transition: all 0.2s;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.burger__menu_list a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #6B7276;
+}
+.burger__menu_city {
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid #C0D1E7;
+    border-bottom: 1px solid #C0D1E7;
+    display: flex;
+    flex-direction: row;
+}
+
+.burger__menu_menu {
+    width: 100%;
+    padding: 2em 0 0 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:  25px;
+}
+
+.burger__menu_menu a {
+    width: 85%;
+}
+.burger__menu_menu i {
+    float: right;
+}
+
+.burger__menu_menu a:hover {
+    color: #40BCEC;
+}
+.burger__menu_menu a:hover i {
+    margin-left: 1em;
+    border: solid #36B9EB;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.burger__menu_prise {
+    height: 100%;
+    margin-top: 1em;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    white-space: nowrap;
+    transition: all 0.5s;
+}
+
+.burger__menu_about {
+    height: 100%;
+    transition: all 0.5s;
+    margin-top: 1em;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    white-space: nowrap;
+}
+
+@media screen and (max-width:1440px) {
+    .container {
+        width: 1200px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .container {
+        width: 1024px;
+    }
+    .menu {
+        gap: 2em;
+    }
+}
+@media screen and (max-width:1024px) {
+    .container {
+        width: 992px;
+    }
+    .menu a {
+        font-size: 16px;
+    }
+    .menu button {
+        font-size: 16px;
+    }
+    nav button {
+        font-size: 16px;
+    }
+   
+}
+@media screen and (max-width:992px) {
+    .container {
+        width: 768px;
+    }
+    .menu {
+        gap: 1em;
+    }
+    .menu a {
+        font-size: 14px;
+    }
+    .menu button {
+        font-size: 14px;
+    }
+    nav button {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        width: 320px;
+    }
+    .menu {
+        display: none;
+    }
+    nav button {
+        display: none;
+    }
+    .burger__menu {
+        display: flex;
+    }
+}
+
+

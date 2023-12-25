@@ -1,0 +1,121 @@
+.rents {
+    background-image: url('../img/rents/rents_bg.jpg');
+    background-size: cover;
+    position: relative;
+    height: 100%;
+}
+.blur {
+    height: 100%;
+    right: 0;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.20);
+    position: absolute;
+    backdrop-filter: blur(17px);
+}
+
+.rents__container {
+    padding-bottom: 10em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+.rents__item {
+    margin-left: 2em;
+    z-index: 100;
+    padding-top: 5em;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.rents__item h1 {
+    color: #FFFFFF;
+    font-size: 45px;
+    font-weight: 300;
+    font-family: 'Cormorant Infant', serif;
+}
+.rents__vector {
+    margin-right: 10px;
+    width: 16px;
+    height: 20px;
+}
+.rents__item p {
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+}
+.rents__item button {
+    cursor: pointer;
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    padding: 15px 35px;
+    border-radius: 40px;
+}
+.rents__item button:last-child {
+    margin-left: 1em;
+}
+#rents__item_btn_active {
+    background-color: #B0BFD0;
+    border: 1px solid #CFC3B9;
+}
+#rents__item_btn_active:hover {
+    background-color: #8797A0;
+    border: 1px solid #CFC3B9;
+}
+
+@media screen and (max-width: 1200px) {
+    .rents__item h1 {
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .rents__item button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .rents {
+        padding: 5em 0;
+        background-position: center;
+    }
+    .blur {
+        height: 52%;
+        width: 100%;
+        bottom: 0;
+    }
+    .rents__container {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+    .rents__item {
+        gap: 1em;
+        padding: 2em 0 3em 0;
+        width: 100%;
+    }
+    .rents__item div {
+        display: flex;
+        flex-direction: column;
+    }
+    .rents__item h1 {
+        font-size: 30px;
+    }
+    .rents__item p {
+        font-size: 12px;
+    }
+    .rents__item button {
+        margin-top: 10px;
+    }
+    .rents__item button:last-child {
+        margin-left: 0;
+    }
+}

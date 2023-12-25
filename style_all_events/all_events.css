@@ -1,0 +1,141 @@
+.all__events {
+    margin: 100px 0 250px 0;
+}
+.all__events_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+}
+.all__events_title  h1 {
+    font-size: 45px;
+    font-weight: 300;
+    color: #6B7276;
+    font-family: 'Cormorant Infant', serif;
+}
+.all__events_title p {
+    color: #6B7276;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.all__events_item {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+}
+
+.all__events_text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.all__events_text h2 {
+    color: #6B7276;
+    font-size: 42px;
+    font-family: 'Cormorant Infant', serif;
+    font-weight: 300;
+}
+.all__events_text p {
+    color: #6B7276;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+.all__events_text span {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.all__events_text div {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+.all__events_text div button {
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px 40px;
+    border: 1px solid #6B7276;
+    background-color: transparent;
+    color: #6B7276;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.all__events_text div button:hover {
+    color: #36B9EB;
+    border: 1px solid #36B9EB;
+}
+#all__events_btn_record {
+    background-color: #B0BFD0;
+    border: 1px solid #B0BFD0;
+    color: #FCFCFC;
+}
+#all__events_btn_record:hover {
+    background-color: #8797A0;
+    border: 1px solid #8797A0;
+    color: #CFC3B9;
+}
+
+.all__events_img img {
+    width: 720px;
+    height: 400px;
+}
+
+
+
+@media screen and (max-width: 1440px) {
+    .all__events_item {
+        gap: 50px;
+    }
+    .all__events_img img {
+        width: 650px;
+        height: 370px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .all__events_title h1 {
+        font-size: 35px;
+    }
+    .all__events_text span {
+        font-size: 16px;
+    }
+    .all__events_text h2 {
+        font-size: 30px;
+    }
+    .all__events_img img {
+        width: 315px;
+        height: 170px;
+    }
+} 
+
+@media screen and (max-width: 768px) {
+    .all__events {
+        margin: 100px 0 150px 0;
+    }
+    .all__events_title {
+        gap: 1.5em;
+        flex-direction: column;
+    }
+    .all__events_item {
+        gap: 1.5em;
+        flex-direction: column-reverse;
+    }
+    .all__events_text {
+        width: 100%;
+    }
+    .all__events_text div {
+        flex-direction: column;
+    }
+    .all__events_text div button {
+        width: 100%;
+    }
+}

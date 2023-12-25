@@ -1,0 +1,100 @@
+.rent__price {
+    background-color: #E6F0FE;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 180px;
+    position: relative;
+}
+.rent__price_title {
+    padding: 7em 0 3em 0;
+}
+
+.price__table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.price__container {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.price__container p {
+    font-size: 22px;
+    color: #6B7276;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.price__cell {
+    border: 1px solid #6B7276;
+    padding: 1.5em;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 40px;
+}
+
+.price__container p {
+    color: #6B7276;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+}
+
+.price__container p b {
+    font-weight: 700;
+}
+
+.price__container a {
+    font-size: 18px;
+    color: #36B9EB;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+.rent__note {
+    margin: 3em 0;
+}
+.rent__note p {
+    color: #6B7276;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width: 1200px) {
+    .rent__price_title h1 {
+        font-size: 45px;
+    }
+    .price__cell  {
+        width: 90%;
+    }
+    .rent__price  {
+        padding-bottom: 110px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .price__table {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .price__container {
+        width: 98%;
+    }
+    .price__container p {
+        font-size: 16px;
+    }
+    .price__cell {
+        gap: 10px;
+        width: 100%;
+    }
+}

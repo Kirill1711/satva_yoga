@@ -1,0 +1,14 @@
+.music__blue_section {
+    background-color: #E7F2FF;
+    padding: 5em 0;
+}
+.music__blue_section_text {
+    background-color: #E7F2FF;
+    color: #6B7276;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: 'Cormorant Infant', serif;
+}
+.music__blue_section_text b {
+    font-weight: 700;
+}

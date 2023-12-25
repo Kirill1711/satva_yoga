@@ -1,0 +1,124 @@
+#white_bg {
+    margin-top: 30px;
+    padding: 1em;
+    background-color: #fcfcfc;
+    position: relative;
+}
+#position_rel {
+    position: relative;
+}
+
+.rent__wrapper {
+    background-image: url('../img/rents/rents_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 970px;
+    width: 100%;
+    margin: -130px 0 0 0;
+}
+.rent__text {
+    padding: 200px 0 80px 0;
+}
+.rent__text h1 {
+    color: #F9F9F9;
+    font-weight: 300;
+    font-family: 'Cormorant Infant', serif;
+}
+.rent__text p {
+    max-width: 1100px;
+    margin-top: 1.2em;
+    color: #F9F9F9;
+    font-weight: 400;
+    font-size: 23px;
+    font-family: 'Raleway', sans-serif;
+}
+.rent__container {
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.rent__item {
+    width: 450px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 60px 0 60px;
+    background-color: #B4B4B433;
+    justify-content: center;
+}
+.rent__item img {
+    margin: 2em;
+    width: 56px;
+    height: 56px;
+}
+.rent__item p {
+    font-family: 'Raleway', sans-serif;
+    color: #F9F9F9;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 1em;
+}
+.rent__item_active {
+    background-color: #B0BFD0;
+    font-weight: 600;
+    font-size: 22px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.rent__item_active:hover {
+    background-color: #8797A0;
+    color: #CFC3B9;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .rent__text h1 {
+        font-size: 45px;
+    }
+    .rent__item p {
+        font-size: 18px;
+    }
+    .rent__item_active {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .rent__item img {
+        margin: 1em;
+    }
+    .rent__item p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        position: relative;
+    }
+    #white_bg {
+        margin-top: 0;
+    }
+    .rent__wrapper {
+        height: 100%;
+        padding-bottom: 4em;
+    }
+    .rent__text h1 {
+        font-size: 35px;
+    }
+    .rent__text p {
+        font-size: 18px;
+    }
+    .rent__container {
+        flex-direction: column;
+        gap: 30px
+    }
+    .rent__item {
+        width: 315px;
+    }
+}

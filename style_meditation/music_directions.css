@@ -1,0 +1,66 @@
+.music__directions {
+    margin: 5em 0;
+}
+.music__directions p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #6B7276;
+    font-family: 'Raleway', sans-serif;
+}
+.music__directions_container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.music__directions_item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 2em;
+}
+.music__directions_item div {
+    text-align: center;
+    width: 100%;
+    border: 1px solid #6B7276;
+    padding: 1em 0;
+    border-left: none;
+    border-right: none;
+}
+.music__directions_item  h3 {
+    color: #6B7276;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+}
+.music__directions_item p {
+    font-size: 16px;
+    color: #6B7276;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+}
+.music__directions_item img {
+    margin-top: 1em;
+    width: 480px;
+    height: 450px;
+}
+
+@media screen and (max-width: 1024px) {
+    .music__directions_item h3 {
+        font-size: 24px;
+    }
+    .music__directions_item img  {
+        width: 400px;
+        height: 350px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .music__directions_container {
+        flex-direction: column-reverse;
+    }
+    .music__directions_item img {
+        margin-top: 0;
+        width: 320px;
+        height: 280px;
+    }
+}

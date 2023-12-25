@@ -1,0 +1,12 @@
+.blue_bg {
+    background: linear-gradient(rgb(223, 238, 255) 100%, rgba(226, 240, 255, 0.651) 65%);
+}
+.pad_top {
+    padding-top: 6em;
+}
+.pad_bot {
+    padding-bottom: 150px;
+}
+.none_bg {
+    background-color: transparent !important;
+}

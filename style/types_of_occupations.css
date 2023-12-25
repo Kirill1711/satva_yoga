@@ -1,0 +1,179 @@
+.types_of_occupations {
+    background-color: #DBE0E8;
+    padding-bottom: 3em;
+}
+.types_of_occupations__title {
+    padding: 3em 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+.types_of_occupations__title h1 {
+    white-space: nowrap;
+    color: #6B7276;
+    font-size: 45px;
+    font-weight: 300;
+    font-family: 'Cormorant Infant', serif;
+}
+
+.types_of_occupations__title span {
+    width: 50%;
+    margin-top: 0.5em;
+    height: 1px;
+    background-color: #6B7276;
+    opacity: 40%;
+}
+.types_of_occupations__title button {
+    color: #6B7276;
+    padding: 20px 40px;
+    border-radius: 40px;
+    border: 1px solid #6B7276;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #DBE0E8;
+}
+
+
+.types_of_occupations__list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom: 3em;
+    justify-content: space-between;
+}
+
+.types_of_occupations__item {
+    width: 450px;
+    height: 450px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 80px 80px 80px 0;
+}
+
+.types_of_occupations__item div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 420px;
+    height: 240px;
+    border-radius: 70px 70px 70px 0px;
+    background-size: cover;
+}
+.types_of_occupations__item_one {
+    background-image: url('../img/types_of_occupations/individual_training.png');
+}
+.types_of_occupations__item_two {
+    background-image: url('../img/types_of_occupations/many_training.png');
+}
+.types_of_occupations__item_tree {
+    background-image: url('../img/types_of_occupations/alone_training.png');
+}
+.types_of_occupations__item div h2 {
+    color: #FFFFFF;
+}
+.types_of_occupations__item p {
+    color: #6B7276;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    margin: 2em;
+}
+.types_of_occupations__item button {
+    color: #6B7276;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px 40px 23px 40px;
+    border: solid 1px #6B7276;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.types_of_occupations__rent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 2em;
+    border-radius: 60px 0;
+    gap: 40px;
+}
+.types_of_occupations__rent h2 {
+    color: #6B7276;
+    white-space: nowrap;
+    font-size: 35px;
+}
+.types_of_occupations__rent p {
+    color: #6B7276;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+}
+.types_of_occupations__rent button {
+    color: #6B7276;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px 40px 23px 40px;
+    border: solid 1px #6B7276;
+    border-radius: 40px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+
+
+
+@media screen and (max-width:1440px) {
+    .types_of_occupations__item {
+        width: 320px;
+        height: 460px;
+    }
+    .types_of_occupations__item div {
+        width: 310px;
+        height: 240px
+    }
+    .types_of_occupations__item h2 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .types_of_occupations__title h1 {
+        font-size: 35px;
+    }
+    .types_of_occupations__rent {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .types_of_occupations__title button {
+        display: none;
+    }
+    .types_of_occupations__list {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .types_of_occupations__item {
+        width: 450px;
+    }
+    .types_of_occupations__item div {
+        width: 410px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .types_of_occupations__item {
+        width: 320px;
+        height: 460px;
+    }
+    .types_of_occupations__item div {
+        width: 310px;
+        height: 240px
+    }
+}

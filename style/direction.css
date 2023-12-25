@@ -1,0 +1,110 @@
+.direction {
+    background: linear-gradient(#DFEEFF 100%, #E2F0FFA6 65%);
+    padding-bottom: 3em;
+}
+.direction__title {
+    padding: 2em 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.direction__title h1 {
+    color: #6B7276;
+    font-size: 45px;
+    font-weight: 300;
+    font-family: 'Cormorant Infant', serif;
+}
+.direction__title span {
+    margin-top: 1em;
+    width: 80%;
+    height: 1px;
+    background-color: #6B7276;
+    opacity: 40%;
+}
+
+.direction__calendar {
+    margin: 1em 0;
+}
+
+.direction__calendar_line {
+    background-color: #C0D1E7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.clalendar__item {
+    background-color: #E0EEFF;
+    width: 360px;
+    height: 150px;
+    border: 1px solid #C0D1E7;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+}
+.clalendar__item p {
+    margin-left: 1em;
+    color: #6B7276;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+}
+.clalendar__item span {
+    margin-left: 1em;
+    font-size: 20px;
+    color: #6B7276;
+    font-weight: 300;
+    font-family: 'Cormorant Infant', serif;
+}
+
+.clalendar__item:hover {
+    background-color: #FFFFFF;
+}
+
+.clalendar__cirule {
+    cursor: pointer;
+    opacity: 50%;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #6B7276;
+    border-radius: 50%;
+}
+.clalendar__cirule img {
+    width: 10px;
+    height: 18px;
+    margin: 0.55em 0.75em;
+}
+
+.direction__calendar_line:first-child  {
+    border-radius: 30px 30px 0 0;
+} 
+.direction__calendar_line:last-child  {
+    border-radius: 0 0 30px 30px;
+} 
+
+@media screen and (max-width: 1200px) {
+    .direction__title h1 {
+        font-size: 35px;
+    }
+    .clalendar__item {
+        width: 315px;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .clalendar__item {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .direction__calendar_line {
+        flex-direction: column;
+    }
+}
